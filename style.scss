@@ -1,0 +1,33 @@
+$brown:  rgba(235, 218, 181, 0.5);
+$red: rgba(167, 0, 0, 0.5);
+$white: rgba(255, 255, 255, 0.5);
+$black: rgba(0, 0, 0, 0.5);
+
+// defines the size of the pattern
+$size: 300px;
+
+body {
+    height: 100vh;
+    
+    background:
+    repeating-linear-gradient(to right,
+      $red calc(#{$size} / 25 * 0), $red calc(#{$size} / 25 * 1),
+      transparent calc(#{$size} / 25 * 1), transparent calc(#{$size} / 25 * 8),
+      $black calc(#{$size} / 25 * 8), $black calc(#{$size} / 25 * 10),
+      $white calc(#{$size} / 25 * 10), $white calc(#{$size} / 25 * 12),
+      $black calc(#{$size} / 25 * 12), $black calc(#{$size} / 25 * 14),
+      $white calc(#{$size} / 25 * 14), $white calc(#{$size} / 25 * 16),
+      $black calc(#{$size} / 25 * 16), $black calc(#{$size} / 25 * 18),
+      transparent calc(#{$size} / 25 * 18), transparent calc(#{$size} / 25 * 25)
+    ), rgb(218, 211, 196)
+    repeating-linear-gradient(to bottom,
+    $red calc(#{$size} / 25 * 0), $red calc(#{$size} / 25 * 1),
+    transparent calc(#{$size} / 25 * 1), transparent calc(#{$size} / 25 * 8),
+    $black calc(#{$size} / 25 * 8), $black calc(#{$size} / 25 * 10),
+    $white calc(#{$size} / 25 * 10), $white calc(#{$size} / 25 * 12),
+    $black calc(#{$size} / 25 * 12), $black calc(#{$size} / 25 * 14),
+    $white calc(#{$size} / 25 * 14), $white calc(#{$size} / 25 * 16),
+    $black calc(#{$size} / 25 * 16), $black calc(#{$size} / 25 * 18),
+    transparent calc(#{$size} / 25 * 18), transparent calc(#{$size} / 25 * 25)
+  )
+}
